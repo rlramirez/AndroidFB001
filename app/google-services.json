@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063989342499",
+    "project_id": "androidfb01-53ee2",
+    "storage_bucket": "androidfb01-53ee2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063989342499:android:c5c0be008ccd2b081a9c96",
+        "android_client_info": {
+          "package_name": "com.sabirm.androidfb001"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063989342499-lgkh8kplc8u70iq02ko4ca0lafd6qshf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJCZb1gUeomWRO08VhDwPRuV9nJPcQK5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063989342499-lgkh8kplc8u70iq02ko4ca0lafd6qshf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
