@@ -7,7 +7,9 @@ class Programmer(val name: String, val age: Int, val languages: Array<Language> 
         KOTLIN,
         SWIFT,
         JAVA,
-        JAVASCRIPT
+        JAVASCRIPT,
+        PHP,
+        PYTHON
     }
 
     fun code(){
