@@ -43,10 +43,12 @@ class MainActivity : AppCompatActivity() {
         //salto de ventana local
         val boton2=findViewById<Button>(R.id.button2)
         boton2.setOnClickListener{
-            var nombreUser=et_nombre.text.toString()
-            val saltar=Intent(this,Lugares::class.java)
-            intent.putExtra("Nombre", nombreUser)
+            var Nombre:String=et_nombre.text.toString()
+
+            val saltar:Intent=Intent(this,Lugares::class.java)
+            saltar.putExtra("Nombre", Nombre)
             startActivity(saltar)
+            //startActivity(Intent(this, Lugares::class.java).putExtra("Nombre", Nombre))
         }
     }
 
