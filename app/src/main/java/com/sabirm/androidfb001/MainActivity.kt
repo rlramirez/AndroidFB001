@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
         //boton
         clickboton()
+        firebase()
 
         //salto de ventana local
         val boton2=findViewById<Button>(R.id.button2)
@@ -50,6 +52,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(saltar)
             //startActivity(Intent(this, Lugares::class.java).putExtra("Nombre", Nombre))
         }
+        btn_gps.setOnClickListener(){
+            val saltargps:Intent=Intent(this,AuthActivity::class.java)
+            startActivity(saltargps)
+        }
+    }
+    fun firebase(){
+        val analitycs:FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        val bundle = Bundle()
+        bundle.putString("message","Integracion con frirebase completa")
+        analitycs.logEvent("InitScreen", bundle)
     }
 
     fun clickboton(){
